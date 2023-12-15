@@ -42,7 +42,6 @@ export default function RootLayout({
         <div className="col-start-2 row-start-3">
           {children}
         </div>
-        {/* <div className="row-[span_6_/_span_6] col-start-5  bg-mustard-500"></div> */}
         <div className="row-span-10 col-start-5  bg-mustard-500"></div>
       </body>
     </html>
