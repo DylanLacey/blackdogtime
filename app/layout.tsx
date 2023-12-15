@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-// import { Inter } from 'next/font/google'
 import { Noto_Serif } from 'next/font/google'
 import './globals.css'
 import { Todo } from '@/components/todo'
