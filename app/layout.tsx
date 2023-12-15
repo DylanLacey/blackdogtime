@@ -29,7 +29,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <div className="">
+          <div className="mr-4">
             <Quoter />
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function RootLayout({
           {children}
         </div>
 
-        <div className="col-start-5 bg-mustard-500 p-4 m-4 mr-8 rounded-lg">
+        <div className="col-start-5 bg-mustard-500 p-4 m-4 rounded-lg">
           <Todo />
         </div>
 

@@ -49,14 +49,14 @@ export function Todo({userStyles=""}: {userStyles: string}) {
     const list_items = todoItemNames.map(t => 
         <li key={t}>
             <input type="checkbox" id={t} name={t} checked={todayList[t]} onChange={handleToggle} />
-            <label htmlFor={t}> ... {t} today?</label>
+            <label htmlFor={t}> {t} today?</label>
         </li>
     )
 
     return (
-        <div id="todoList" className={userStyles}>
+        <div id="todoList" className={userStyles + " h-full flex flex-col flex-auto gap-5 justify-start"}>
             <h3 className="pb-2">Have You...</h3>
-            <ul>{list_items}</ul>
+            <ul className="">{list_items}</ul>
         </div>
     )
 }
