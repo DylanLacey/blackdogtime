@@ -5,7 +5,7 @@ type Quote = {
     author: String,
     source?: String
 }
-export async function Quoter({userStyles}: { userStyles: string}) {
+export async function Quoter({userStyles = ""}: { userStyles: string}) {
     const quotedata = await fs.readFile(process.cwd() + '/public/static_data/quotes.json', 'utf8');
     const quotes: Array<Quote> = JSON.parse(quotedata)
 
