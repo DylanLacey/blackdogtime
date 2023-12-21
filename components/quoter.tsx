@@ -12,10 +12,10 @@ export async function Quoter({userStyles = ""}: { userStyles: string}) {
     const selected_quote = quotes[Math.floor(Math.random() * quotes.length)]
     
     return (
-        <div id="quote" className={"flex flex-wrap text-lg italic grow" + userStyles}>
-            <p className="flex-row basis-full">
+        <div id="quote" className={"flex text-lg italic grow text- " + userStyles}>
+            <p className="flex flex-col">
                 {selected_quote.quote}
-                <span className="text-raisin-300 pl-4">  --- ({selected_quote.author})</span>
+                <span className="text-raisin-300 text-right whitespace-nowrap">  --- ({selected_quote.author})</span>
             </p>
         </div>
     )
