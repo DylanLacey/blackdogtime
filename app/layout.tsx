@@ -3,6 +3,7 @@ import { Noto_Serif } from 'next/font/google'
 import './globals.css'
 import { Todo } from '@/components/todo'
 import { Quoter } from '@/components/quoter'
+import { SomethingTo } from '@/components/something_to'
 
 const noto_serif = Noto_Serif({ subsets: ['latin'] })
 
@@ -18,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bg-antiflashwhite-50 text-raisin-400">
-      <body className={noto_serif.className + " min-h-screen grid grid-cols-5"}>
+      <body className={noto_serif.className + " min-h-screen grid grid-cols-5 mx-12"}>
         <div id="header" className="col-span-full row-start-1 text-raisin-500 flex items-center">
-          <div className="m-10 h-32 w-64 flex items-center">
+          <div className="h-32 w-64 flex items-center">
             <div className="h-full bg-mustard-500 rounded-lg flex items-center justify-end">
               <h2 className="mx-1">Blackdog</h2>
             </div>
@@ -29,7 +30,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <div className="mr-4">
+          <div className="ml-8 justify-self-end pr-4">
             <Quoter />
           </div>
         </div>
@@ -38,7 +39,7 @@ export default function RootLayout({
           {children}
         </div>
 
-        <div className="col-start-5 bg-mustard-500 p-4 m-4 rounded-lg">
+        <div className="col-start-5 bg-mustard-500 p-4 rounded-lg">
           <Todo />
         </div>
 
